@@ -1,0 +1,7 @@
+.timeline{display:grid;gap:16px}
+.role{background:#121212;border:1px solid #232323;border-radius:14px;padding:16px}
+.role-head{display:flex;justify-content:space-between;align-items:baseline;gap:12px;flex-wrap:wrap}
+.role h3{margin:0}
+.role .org{opacity:.9}
+.role .dates{opacity:.75;font-size:.95rem}
+.role ul{margin:8px 0 0 18px}

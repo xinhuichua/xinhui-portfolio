@@ -1,0 +1,6 @@
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.project{background:#121212;border:1px solid #232323;border-radius:14px;padding:16px}
+.project-head{display:flex;justify-content:space-between;align-items:baseline;gap:12px;flex-wrap:wrap}
+.project .date{opacity:.75}
+.project ul{margin:8px 0 0 18px}
+@media (max-width:900px){.grid{grid-template-columns:1fr}}

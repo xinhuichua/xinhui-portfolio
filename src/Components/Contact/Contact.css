@@ -1,0 +1,4 @@
+.contact-card{background:#121212;border:1px solid #232323;border-radius:14px;padding:18px}
+.contact-card a{color:#c9e8ff;text-decoration:none}
+.contact-card a:hover{text-decoration:underline}
+.note{opacity:.9;margin-top:6px}

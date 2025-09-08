@@ -1,0 +1,4 @@
+.footer{border-top:1px solid #242424;background:#0f0f0f;padding:18px 20px;margin-top:36px}
+.footer .container{max-width:1100px;margin:0 auto;display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap}
+.footer .back{color:#ddd;text-decoration:none}
+.footer .back:hover{color:#fff}

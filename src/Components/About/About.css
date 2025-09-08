@@ -1,0 +1,7 @@
+.section{padding:56px 20px;border-top:1px solid #242424}
+.container{max-width:1100px;margin:0 auto}
+.section h2{font-size:1.8rem;margin-bottom:18px}
+.cards{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+.card{background:#121212;border:1px solid #232323;border-radius:14px;padding:18px}
+.tight{margin:0 0 10px 18px}
+@media (max-width:900px){.cards{grid-template-columns:1fr}}

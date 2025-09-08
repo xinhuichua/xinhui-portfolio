@@ -1,17 +1,44 @@
 import React from 'react';
+import { Link } from 'react-scroll';
 import './Navbar.css';
 
 const Navbar = () => {
   return (
     <header className="navbar">
       <div className="container">
-        <a href="#home" className="brand">Chua Xinhui</a>
+        <Link
+          to="home"
+          spy={true}
+          smooth={true}
+          offset={-64}   // adjust if your navbar is sticky
+          duration={500}
+          className="brand"
+        >
+          Chua Xinhui
+        </Link>
         <nav>
-          <a href="#about">About</a>
-          <a href="#experience">Experience</a>
-          <a href="#projects">Projects</a>
-          <a href="#skills">Skills</a>
-          <a href="#contact" className="btn">Contact</a>
+          <Link to="about" spy={true} smooth={true} offset={-64} duration={500}>
+            About
+          </Link>
+          <Link to="experience" spy={true} smooth={true} offset={-64} duration={500}>
+            Experience
+          </Link>
+          <Link to="projects" spy={true} smooth={true} offset={-64} duration={500}>
+            Projects
+          </Link>
+          <Link to="skills" spy={true} smooth={true} offset={-64} duration={500}>
+            Skills
+          </Link>
+          <Link
+            to="contact"
+            spy={true}
+            smooth={true}
+            offset={-64}
+            duration={500}
+            className="btn"
+          >
+            Contact
+          </Link>
         </nav>
       </div>
     </header>

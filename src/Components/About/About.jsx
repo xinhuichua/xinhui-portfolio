@@ -45,9 +45,9 @@ const About = () => (
           </div>
         </div>
 
-        {/* Leave right column for Experience section (separate component) */}
+
         <div className="placeholder-col">
-          {/* This space intentionally left for Experience.jsx which renders the matching timeline */}
+     
         </div>
       </div>
     </div>

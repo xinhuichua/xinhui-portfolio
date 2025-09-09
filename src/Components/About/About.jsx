@@ -1,27 +1,53 @@
 import React from 'react';
 import './About.css';
 
+const education = [
+  {
+    years: '2022 – 2025',
+    title: 'B.Sc. (Information Systems)',
+    place: 'Singapore Management University',
+    desc: 'Activities: Data Analytics in Asia (SMU-X), Reach Alliance Researcher'
+  },
+  {
+    years: '2019 – 2022',
+    title: 'Diploma in Financial Business Informatics (Merit)',
+    place: 'Temasek Polytechnic',
+    desc: 'Activities: Diploma Student Interest Group, TP LEADership Programme, Singtel GD Hackathon, Polyfintech100 Hackathon',
+  },
+];
+
 const About = () => (
   <section id="about" className="section">
     <div className="container">
-      <h2>About</h2>
-      <div className="cards">
-        <div className="card">
-          <h3>Education</h3>
-          <ul className="tight">
-            <li><strong>Singapore Management University</strong> — B.Sc. (Information Systems), Aug 2022 – Dec 2025</li>
-            <li>Activities: SMU Inspirar; SMU BIA; Project MigrantPal; Ellipsis Tech Series Hackathon 2024 (Top 10); AGO Data Challenge 2023; Data Analytics in Asia (Bangkok) – HungryHub</li>
-            <li>Award: John Lim Family Office Scholarship</li>
-          </ul>
-          <ul className="tight">
-            <li><strong>Temasek Polytechnic</strong> — Diploma in Financial Business Informatics (Merit), Apr 2019 – May 2022</li>
-            <li>Activities: FBI SIG; Industry Mentorship Network; Community Service Club; Temasek Leadership Programme; Singtel Global Delivery Hackathon; SP Polyfintech API Hackathon 2021</li>
-            <li>Awards: Octava Foundation Scholarship; Director’s List AY2020/2021; Informatics & IT Youth Leader Award</li>
-          </ul>
+      <div className="intro-row">
+        <h2>About</h2>
+        <p className="intro">
+          I am keen in <strong>Software Development</strong> and <strong>Data Analytics</strong>,
+          and enjoy building solutions that combine technical skills with business impact.
+        </p>
+      </div>
+
+      <div className="edu-exp">
+        {/* Education column */}
+        <div>
+          <h3 className="col-title">Education</h3>
+          <div className="timeline">
+            {education.map((item, i) => (
+              <div className="timeline-item" key={i}>
+                <div className="timeline-card">
+                  <span className="years">{item.years}</span>
+                  <h4 className="item-title">{item.title}</h4>
+                  <div className="place">{item.place}</div>
+                  <p className="desc">{item.desc}</p>
+                </div>
+              </div>
+            ))}
+          </div>
         </div>
-        <div className="card">
-          <h3>What I’m looking for</h3>
-          <p>Data / Analytics roles where I can ship robust pipelines, clean visualizations, and measurable business impact.</p>
+
+        {/* Leave right column for Experience section (separate component) */}
+        <div className="placeholder-col">
+          {/* This space intentionally left for Experience.jsx which renders the matching timeline */}
         </div>
       </div>
     </div>

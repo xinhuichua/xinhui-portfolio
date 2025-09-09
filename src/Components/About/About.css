@@ -1,7 +1,70 @@
-.section{padding:56px 20px;border-top:1px solid #242424}
-.container{max-width:1100px;margin:0 auto}
-.section h2{font-size:1.8rem;margin-bottom:18px}
-.cards{display:grid;grid-template-columns:1fr 1fr;gap:18px}
-.card{background:#121212;border:1px solid #232323;border-radius:14px;padding:18px}
-.tight{margin:0 0 10px 18px}
-@media (max-width:900px){.cards{grid-template-columns:1fr}}
+.section { padding: 56px 20px; border-top: 1px solid #242424; scroll-margin-top: 80px; }
+.container { max-width: 1100px; margin: 0 auto; }
+
+.intro-row { display: grid; gap: 10px; margin-bottom: 18px; }
+.intro { font-size: 1.05rem; opacity: 0.95; }
+
+.edu-exp {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* two columns like your screenshot */
+  gap: 28px;
+}
+
+.col-title {
+  color: #18a558;               /* green accent */
+  font-weight: 700;
+  letter-spacing: .5px;
+  text-transform: uppercase;
+  margin-bottom: 14px;
+}
+
+/* Timeline scaffold */
+.timeline { position: relative; padding-left: 24px; }
+.timeline::before {
+  content: "";
+  position: absolute;
+  left: 9px;
+  top: 4px;
+  bottom: 4px;
+  width: 2px;
+  background: #1e6e46;          /* vertical line */
+  opacity: .9;
+}
+
+.timeline-item { position: relative; margin-bottom: 16px; }
+.timeline-item::before {
+  content: "";
+  position: absolute;
+  left: -2px;
+  top: 14px;
+  width: 10px;
+  height: 10px;
+  border-radius: 999px;
+  background: #18a558;          /* green dot */
+  box-shadow: 0 0 0 3px rgba(24,165,88,.15);
+}
+
+.timeline-card {
+  background: #121212;
+  border: 1px solid #232323;
+  border-radius: 12px;
+  padding: 14px 16px;
+  transition: transform .18s ease, box-shadow .18s ease, border-color .18s ease;
+}
+.timeline-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 24px rgba(0,0,0,.35);
+  border-color: #2e2e2e;
+}
+
+.years { color: #9fe7bf; font-weight: 700; font-size: .86rem; letter-spacing: .3px; }
+.item-title { margin: 6px 0 2px; font-size: 1.06rem; }
+.place { opacity: .9; font-size: .95rem; margin-bottom: 6px; }
+.desc { opacity: .85; }
+
+.placeholder-col { display: none; }    /* hidden here; Experience fills it */
+
+@media (max-width: 900px) {
+  .edu-exp { grid-template-columns: 1fr; }  /* stack on mobile */
+  .placeholder-col { display: none; }
+}

@@ -37,8 +37,8 @@ const Skills = () => (
             <li><Database size={18} /> SQL / MySQL / PHP</li>
             <li><BarChart3 size={18} /> Power BI</li>
             <li><FileSpreadsheet size={18} /> Tableau</li>
-            <li><Cloud size={18} /> <IconImg src={ICONS.azure} alt="Microsoft Azure" /> Microsoft Azure</li>
-            <li><GitMerge size={18} /> <IconImg src={ICONS.azureDevOps} alt="Azure DevOps" /> Azure DevOps</li>
+            <li><Cloud size={18} />  Microsoft Azure</li>
+           
           </ul>
         </div>
 

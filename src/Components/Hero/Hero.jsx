@@ -1,6 +1,6 @@
 import React from 'react';
 import './Hero.css';
-
+import profile from '../../assets/xinhui.jpg';
 const Hero = () => {
   return (
     <section id="home" className="hero">
@@ -13,7 +13,7 @@ const Hero = () => {
         
         </div>
         <div className="hero-avatar" aria-hidden="true">
-          <div className="avatar-circle">CX</div>
+          <img src={profile} alt="Chua Xinhui" className="avatar-img" />
         </div>
       </div>
     </section>

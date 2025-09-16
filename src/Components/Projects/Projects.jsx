@@ -32,7 +32,7 @@ const projects = [
     date: 'Nov 2023',
     bullets: [
       'All‑in‑one study app (Pomodoro, tasks, tracking) using HTML/CSS/JS + Bootstrap.',
-      'Interactive D3.js charts for productivity; responsive layout (graded B+).'
+      'Interactive D3.js charts to allow users to view their productivity; responsive layout.'
     ]
   }
 ];

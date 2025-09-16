@@ -22,13 +22,17 @@ const About = () => (
       <div className="intro-row">
         <h2>About</h2>
         <p className="intro">
-          I am keen in <strong>Software Development</strong> and <strong>Data Analytics</strong>,
-          and enjoy building solutions that combine technical skills with business impact.
+          I am keen in both <strong>Software Development</strong> and <strong>Data Analytics</strong>,
+          and enjoy building solutions that combine technical skills with business impact.  My experience in
+          full-stack web development and data analysis through various projects and internships has equipped me with a solid foundation in these areas.
         </p>
+        <p className="intro">
+          During my free time, I enjoy making matcha, taking photos with my dad's 20 years old digital camera, and playing badminton with my friends. 
+          </p>
       </div>
 
       <div className="edu-exp">
-        {/* Education column */}
+   
         <div>
           <h3 className="col-title">Education</h3>
           <div className="timeline">

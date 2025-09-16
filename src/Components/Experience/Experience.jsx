@@ -6,13 +6,13 @@ const roles = [
     years: 'May 2025 – Aug 2025',
     title: 'Data Analytics Intern',
     place: 'Monetary Authority of Singapore',
-    desc: 'Usability testing for internal AI tool; user research to improve MAS website usability.',
+    desc: 'Assisted Usability testing for SmartAnswer (an AI Tool); conducted user research to improve MAS website usability.',
   },
   {
     years: 'Jun 2024 – Apr 2025',
     title: 'Dashboard Intern',
     place: 'Ministry of Manpower',
-    desc: 'Built Power BI dashboards; partnered with WPD directors to define KPIs and models.',
+    desc: 'Developed Power BI dashboards for Work Pass Division Team Data and automated reporting processes.',
   },
   {
     years: 'May 2023 – Sep 2024',
@@ -24,7 +24,7 @@ const roles = [
     years: 'Jul 2021 – Feb 2022',
     title: 'Student Intern',
     place: 'Refinitiv (LSEG)',
-    desc: 'Real-time Power BI using Python + Eikon API; automated reporting (~20% faster).',
+    desc: 'Real-time Power BI using Python + Eikon API; improved data retrieval time by 20%.',
   },
 ];
 
@@ -32,7 +32,7 @@ const Experience = () => (
   <section id="experience" className="section">
     <div className="container">
       <div className="edu-exp">
-        {/* Left column is filled by About.jsx; we render only the right column here */}
+       
         <div className="placeholder-col" />
         <div>
           <h3 className="col-title">Experience</h3>
